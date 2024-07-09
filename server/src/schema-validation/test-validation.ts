@@ -10,7 +10,9 @@ console.log('Connected!\n');
 try {
     // eslint-disable-next-line
     await collections?.users?.insertOne(<any>{
-        age: 25
+        age: 25, 
+        name:'Teer',
+        isAdmin: false
     });
 }
 catch (error) {
